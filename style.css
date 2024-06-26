@@ -1,0 +1,324 @@
+body {
+    font-family: "PT Serif", serif;
+    min-width: 860px;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+#app {
+    margin-bottom: -420px;
+}
+
+input,
+button {
+    margin: 5px;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.admin-panel {
+    border: 1px solid black;
+    max-width: 100%;
+    /* Максимальная ширина блока */
+    min-width: 100px;
+    /* Минимальная ширина блока */
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    margin-top: 55px;
+    width: calc(28% - 20px); /* 33.33% - margin */
+    margin: 10px;
+    font-size: 18px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.product-info {
+    background-color: #e2d283;
+    border: 1px solid #76C4C9;
+    border-radius: 50px;
+    text-align: center;
+    width: 500px;
+}
+
+.product-image {
+    width: 450px; /* Задайте фиксированную ширину изображения */
+    height: 300px; /* Задайте фиксированную высоту изображения */
+    object-fit: cover; /* Задайте стиль заполнения изображения */
+}
+
+.pill-nav {
+    width: 100%;
+    margin-top: 420px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #76C4C9;
+}
+
+.edit-btn{
+    cursor: pointer;
+    color: black;
+    width: 120px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.delete-btn{
+    cursor: pointer;
+    width: 120px;
+    color: black;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.pill-nav a {
+    color: black;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    padding: 36px 30px 0 30px;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 5px;
+
+}
+
+.pill-nav a:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.popup-form h2 {
+    margin-top: 0;
+}
+
+.logo {
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 53px;
+    border-radius: 5px;
+}
+
+.baner {
+    justify-content: space-between;
+    width: 100%;
+    height: 700px;
+    background-color: #d4d3d35b;
+    display: flex;
+}
+
+.buy {
+    font-size: 25px;
+    background-color: #76C4C9;
+    border-radius: 50px;
+    width: 250px;
+    border: none;
+    height: 45px;
+    margin-left: 28%;
+    cursor: pointer;
+}
+
+.block1 {
+    width: 650px;
+    margin-top: 25px;
+    margin-left: 10%;
+    padding-top: 80px;
+}
+
+.zg {
+    color: rgb(0, 0, 0);
+    font-size: 65px;
+    width: 600px;
+    text-align: center;
+}
+
+.zg2 {
+    width: 600px;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+.tizer {
+    margin-right: 100px;
+    width: 900px;
+    height: 650px;
+    margin-top: 25px;
+ 
+}
+
+.prew {
+    margin-top: 55px;
+    display: flex;
+  
+}
+
+.image-container {
+    cursor: pointer;
+    position: relative;
+    width: 55%;
+    height: 500px;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.image-overlay {
+    text-align: center;
+    border-radius: 20px;
+    line-height: 1.5;
+    font-family: "Red Hat Display", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    margin: 20px;
+    position: relative;
+    border: 1px solid #e2d283;
+    background-color: #e2d283;
+    line-height: 1.5;
+    border-radius: 20px;
+    width: 45%;
+    height: 500px;
+}
+
+.June {
+    padding: 80px;
+    line-height: 1.5;
+    text-align: center;
+    text-indent: 20px;
+    font-size: 25px;
+}
+
+.zagolovok {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 55px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.ZAG{
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #76C4C9;
+    font-size: 23px;
+    margin-top: 55px;
+}
+
+.ZG{
+    font-size: 30px;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    max-width: 90%;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    background-color:#76C4C9;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#scrollToTopBtn:hover {
+    background-color:#e2d283;
+}
+
+.veref{
+    margin-left: 5.5%;
+width: 500px;
+height: 700px;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #76C4C9;
+}
+
+.bottom-nav {
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #76C4C9;
+}
+
+.bottom-nav a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-top: 2%;
+}

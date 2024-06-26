@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&C - Рalets & Сups: магазин посуды для Вашего дома</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+<header>
+    <div id="app">
+        <button id="push">Админ</button>
+        <div id="ts1" class="ta1">
+            <div class="admin-panel">
+                <input type="text" id="product-name" placeholder="Название товара">
+                <input type="text" id="product-price" placeholder="Цена">
+                <input type="text" id="product-description" placeholder="Описание">
+                <input type="file" id="product-image">
+                <link rel="stylesheet" href="product-list"><button onclick="addProduct()">Добавить товар</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="pill-nav">
+        <a href="#product-list">Каталог</a>
+        <a href="#">Акции</a>
+        <div class="logo">P&C</div>
+        <a href="#veref">Лицензия</a>
+        <a href="#" id="openForm">Войти</a>
+        <div class="overlay" id="overlay"></div>
+        <div class="popup-form" id="popupForm">
+            <form>
+                <h2>Форма регистрации</h2>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Зарегистрироваться</button>
+                <button type="button" id="closeForm">Закрыть</button>
+            </form>
+        </div>
+    </div>
+    <div class="baner">
+        <div class="block1">
+            <h1 class="zg">Море удовольствия в одной кружке</h1>
+            <h4 class="zg2"> Попробуйте новинки летнего сезона</h4>
+            <button class="buy">Купить</button>
+        </div>
+       
+            <img src="img/g.JPG" alt="Тизер блюдце" class="tizer">
+    </div>
+    <div class="prew">
+        <div class="image-container">
+            <div class="image-overlay">
+                <h2>Коллеция "Июнь" </h2>
+            </div>
+            <img src="img/Baner.PNG" alt="Картинка">
+        </div>
+        <div class="info">
+            <div class="June">
+                <p> Каждый элемент коллекции «Июнь» — это сочетание утонченной элегантности и практичности. Изящные
+                    формы, нежные пастельные оттенки и изысканные узоры напоминают о беззаботных днях под открытым
+                    небом.
+                    Наши мастера тщательно отбирали материалы и прорабатывали каждый элемент, чтобы создать посуду,
+                    которая не только радует глаз, но и служит вам долгие годы.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ZAG">
+        <h1>Создай свою эстетику</h1>
+        <div class="ZG">
+            <p> Наша философия проста: посуда должна не только быть красивой, но и функциональной, долговечной и
+                безопасной для здоровья. В Plates&Cups мы стремимся к совершенству во всем, начиная с выбора материалов
+                и
+                заканчивая процессом производства. Мы используем только высококачественную керамику, фарфор и стекло,
+                которые проходят строгий контроль качества и отвечают всем современным стандартам.</p>
+        </div>
+    </div>
+
+    <div class="zagolovok">Все самое необходимое для душевных посиделок</div>
+    <div class="product-list" id="product-list"></div>
+    <div class="zagolovok">Сертефикаты и Лицензии</div>
+    <div class="ver">
+        <img src="img/ver.WEBP" alt="Лицензия" class="veref" id="veref">
+        <img src="img/ver2.PNG" alt="Сертефикат соотвествия"  class="veref">
+        <img src="img/ver3.WEBP" alt="Сертефикат"  class="veref">
+    </div>
+    
+    <footer>
+        <div class="bottom-nav">
+            <a href="#product-list">Каталог</a>
+            <a href="#">Акции</a>
+            <div class="logo">P&C</div>
+            <a href="#veref">Лицензия</a>
+            <a href="#" id="openForm">Войти</a>
+            <div class="overlay" id="overlay"></div>
+            <div class="popup-form" id="popupForm">
+                <form>
+                    <h2>Форма регистрации</h2>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Зарегистрироваться</button>
+                    <button type="button" id="closeForm">Закрыть</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Наверх">&#8679;</button>
+<script src="admin.js"></script>
+<script src="script.js"></script>
+
+</html>

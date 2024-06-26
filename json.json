@@ -1,0 +1,55 @@
+{
+    "admin.js": {
+        "itemList": [],
+        "addProduct": "function addProduct() { ... }",
+        "displayProducts": "function displayProducts() { ... }",
+        "deleteProduct": "function deleteProduct(id) { ... }",
+        "editProduct": "function editProduct(id) { ... }",
+        "isVisible": true,
+        "trigger": "function trigger() { ... }"
+    },
+    "index.html": {
+        "title": "P&C - Раlets & Сups: магазин посуды для Вашего дома",
+        "css": [
+            "css/style.css"
+        ],
+        "meta": [
+            {
+                "charset": "UTF-8"
+            },
+            {
+                "name": "viewport",
+                "content": "width=device-width, initial-scale=1.0"
+            }
+        ],
+        "header": {
+            "buttons": [
+                {
+                    "id": "push",
+                    "text": "Админ"
+                }
+            ]
+        },
+        "body": {
+            "content": [
+                {
+                    "type": "div",
+                    "class": "pill-nav",
+                    "elements": [
+                        {
+                            "type": "a",
+                            "href": "#product-list",
+                            "text": "Каталог"
+                        },
+                        {
+                            "type": "a",
+                            "href": "#",
+                            "text": "Акции"
+                        }
+                    ]
+                }
+            ]
+        },
+        "footer": {}
+    }
+}
